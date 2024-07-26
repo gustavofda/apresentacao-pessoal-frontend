@@ -1,16 +1,31 @@
+import React from 'react';
+import Header from './components/Header';
+import SobreMim from './components/SobreMim';
+import Habilidades from './components/Habilidades';
+import Projetos from './components/Projetos';
+import RedesSociais from './components/RedesSociais';
+import Footer from './components/Footer';
+import './index.css';
 
-import './App.css'
+const App = () => (
+  <div className="max-width">
+    <Header />
+    <main>
+      <section id="about">
+        <SobreMim />
+      </section>
+      <section id="habilidades">
+        <Habilidades />
+      </section>
+      <section id="projetos">
+        <Projetos />
+      </section>
+      <section id="redes-sociais">
+        <RedesSociais />
+      </section>
+    </main>
+    <Footer />
+  </div>
+);
 
-function App() {
-
-  return (
-    <>
-      <main>
-        <h1>Seja bem vindo! :)</h1>
-        <p>Desafio de apresentação Pessoal do Projeto Frontend fusion</p>
-      </main>
-    </>
-  );
-}
-
-export default App
+export default App;
