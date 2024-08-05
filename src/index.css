@@ -213,7 +213,7 @@ p {
   .about__right {
     width: 100%; 
   }
-}
+
   .minha-foto {
     width: 300px; 
     height: 300px;
@@ -224,7 +224,36 @@ p {
   
   .minha-foto:hover {
     transform: scale(1.1); 
-  }  
+  }
+
+  /* Ajustes para header e navegação */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  #Logo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 
 /* Habilidades section */
 #habilidades {
